@@ -14,5 +14,11 @@ public class DoNDrills {
         for (int b = 10; b >= 0; b--){
             System.out.println(b);
         }
+        for (int c = 2; c <= 32; c*=2){
+            System.out.println(c);
+        }
+        for (int d = 1; d <= 49; d+=2){
+            System.out.println(Math.sqrt(d));
+        }
     }
 }
