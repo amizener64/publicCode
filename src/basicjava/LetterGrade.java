@@ -5,7 +5,10 @@ import java.util.Scanner;
  * Created by andrewmizener on 9/3/16.
  */
 public class LetterGrade {
-    public static void main(String args[]){
+
+    public static final int NUM_GRADES = 3;
+
+    public static void main(String[] argss){
         Scanner s = new Scanner(System.in);
         System.out.println("Please enter the number of assignments to be averaged, between 3 and 5.");
         int numAssignments = Integer.parseInt(s.nextLine()); // I do this to advance the line in the scanner
