@@ -9,11 +9,11 @@ public class LetterGrade {
         Scanner s = new Scanner(System.in);
         System.out.println("Please enter the number of assignments to be averaged, between 3 and 5.");
         int numAssignments = Integer.parseInt(s.nextLine()); // I do this to advance the line in the scanner
-        int percentSum = 0;
+        double percentSum = 0;
         System.out.println("Please enter the percentage achieved on each assignment, w/o the % sign.");
         for (int i = 0; i < numAssignments; i++){
             System.out.println("Please enter an assignment grade now: ");
-            percentSum += Integer.parseInt(s.nextLine());
+            percentSum += s.nextDouble();
         }
         double averageGrade = (double)percentSum / (double)numAssignments;
         if (averageGrade >= 90.0) {
